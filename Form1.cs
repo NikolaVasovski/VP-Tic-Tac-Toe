@@ -58,6 +58,7 @@ namespace TicTacToe_Vp
             this.playerOLabel.Text = mkTranslations["playerO"];
             this.draws.Text = mkTranslations["draws"];
             this.playAgain.Text = mkTranslations["playAgain"];
+            this.Text = "Икс-Нула";
         }
 
         private void EN_Lang_CheckedChanged(object sender, EventArgs e)
@@ -66,6 +67,7 @@ namespace TicTacToe_Vp
             this.playerOLabel.Text = enTranslations["playerO"];
             this.draws.Text = enTranslations["draws"];
             this.playAgain.Text = enTranslations["playAgain"];
+            this.Text = "TicTacToe";
         }
 
         private void button_Click(object sender, EventArgs e)
@@ -163,7 +165,8 @@ namespace TicTacToe_Vp
                 {
                     b.BackColor = Color.Yellow;
                 });
-                    return;
+                this.label3.Text = (Int64.Parse(this.label3.Text) + 1).ToString();
+                return;
             }
 
         }
